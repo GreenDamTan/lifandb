@@ -1,0 +1,33 @@
+{
+  "name": "lifan",
+  "version": "0.0.3",
+  "description": "lifan seach",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "lifan": "./bin/lifan"
+  },
+  "author": "youxiachai",
+  "license": "MIT",
+  "dependencies": {
+    "request": "~2.30.0",
+    "nedb": "~0.9.3",
+    "mkdirp": "~0.3.5",
+    "commander": "~2.1.0",
+    "debug": "~0.7.4",
+    "cli-table": "~0.2.0"
+  },
+  "devDependencies": {
+    "iconv-lite": "~0.2.11"
+  },
+  "homepage": "https://github.com/youxiachai/lifandb",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:youxiachai/lifandb.git"
+  },
+  "bugs": {
+    "url": "https://github.com/youxiachai/lifandb/issues"
+  }
+}
