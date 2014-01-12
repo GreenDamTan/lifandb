@@ -12,3 +12,7 @@ all 2000 - 2013 里番 db
 `lifan search -y 2013`
 
 `lifan search -y 2001 -n 090`
+
+show cli table
+
+`lifan search -t -y 2001 -n 090`

@@ -15,6 +15,7 @@ program
     .description('search lifan keyword')
     .option("-n, --name [name]", "keyword by name")
     .option("-y, --year [year]", "keyword by year")
+    .option("-t, --table [table]", "show table style")
     .action(function(options){
 
         var queryParams = {}
@@ -27,7 +28,7 @@ program
             queryParams.year = parseInt(options.year)
         }
 
-        DBlifan.find(queryParams)
+        DBlifan.find(queryParams, options)
 
     });
 
