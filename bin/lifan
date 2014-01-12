@@ -1,0 +1,34 @@
+#!/usr/bin/env node
+
+var program = require('commander'),
+    DBlifan = require('../index'),
+    lifanInfo = require('../package.json');
+
+
+program
+    .version(lifanInfo.version)
+
+
+
+program
+    .command('search')
+    .description('search lifan keyword')
+    .option("-n, --name [name]", "keyword by name")
+    .option("-y, --year [year]", "keyword by year")
+    .action(function(options){
+
+        var queryParams = {}
+
+        if(options.name){
+            queryParams.name =  eval('/'+options.name + '/')
+        }
+
+        if(options.year){
+            queryParams.year = parseInt(options.year)
+        }
+
+        DBlifan.find(queryParams)
+
+    });
+
+program.parse(process.argv);
