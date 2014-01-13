@@ -1,5 +1,8 @@
 #!/usr/bin/env node
 
+/**
+ * Module dependencies.
+ */
 var program = require('commander'),
     DBlifan = require('../index'),
     lifanInfo = require('../package.json');
