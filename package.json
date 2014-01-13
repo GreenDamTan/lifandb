@@ -1,13 +1,13 @@
 {
   "name": "lifan",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "lifan seach",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "bin": {
-    "lifan": "./bin/lifan"
+    "lifan": "bin/lifan"
   },
   "author": "youxiachai",
   "license": "MIT",
